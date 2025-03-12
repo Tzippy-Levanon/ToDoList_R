@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 //default- כ api- הגדרת כתובת ה
-axios.defaults.baseURL = process.env.REACT_APP_API_KEY;
+axios.defaults.baseURL = process.env.REACT_APP_API_URL;
 
 // לטיפול בשגיאות interceptor הוספת
 axios.interceptors.response.use(
