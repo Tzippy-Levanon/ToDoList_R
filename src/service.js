@@ -1,9 +1,7 @@
 import axios from 'axios';
 
 //default- כ api- הגדרת כתובת ה
-// axios.defaults.baseURL = process.env.REACT_APP_API_URL;
-axios.defaults.baseURL = 'http://localhost:5218';
-
+axios.defaults.baseURL = process.env.REACT_APP_API_URL;
 
 // לטיפול בשגיאות interceptor הוספת
 axios.interceptors.response.use(
@@ -22,7 +20,7 @@ axios.interceptors.response.use(
 );
 
 export default {
-
+  
   getTasks: async () => {
     const result = await axios.get(`/Tasks`)
     return result.data;
