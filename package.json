@@ -30,5 +30,5 @@
       "last 1 safari version"
     ]
   },
-  "proxy": "https://todolist-cs-2kk8.onrender.com"
+  "proxy": "http://localhost:5000/"
 }

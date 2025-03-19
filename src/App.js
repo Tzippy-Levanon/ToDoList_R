@@ -28,6 +28,7 @@ function App() {
   }
 
   useEffect(() => {
+    console.log("Todos before setting state:", todos);
     getTodos();
   }, []);
 
