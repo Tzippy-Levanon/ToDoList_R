@@ -23,6 +23,7 @@ export default {
   
   getTasks: async () => {
     const result = await axios.get(`/Tasks`)
+    console.log("Todos before setting state:", result.data);
     return result.data;
   },
 
